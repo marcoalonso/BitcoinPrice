@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BITCOINPrice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degradado" translatesAutoresizingMaskIntoConstraints="NO" id="Htb-Ju-CAY">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio Bitcoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6T-3U-fs4">
+                                <rect key="frame" x="30" y="69" width="333" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="5YF-oU-2Js"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWk-V0-KSQ">
+                                <rect key="frame" x="30" y="233" width="333" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="jyV-hV-omw"/>
+                                </constraints>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bit" translatesAutoresizingMaskIntoConstraints="NO" id="AAs-NA-EFo">
+                                <rect key="frame" x="30" y="403" width="333" height="385"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD 16045" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVY-ne-etB">
+                                <rect key="frame" x="30" y="143" width="333" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="dOj-k8-bPQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Htb-Ju-CAY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Uh-93-UkV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V6T-3U-fs4" secondAttribute="trailing" constant="30" id="4gB-xo-PO4"/>
+                            <constraint firstItem="FVY-ne-etB" firstAttribute="top" secondItem="V6T-3U-fs4" secondAttribute="bottom" constant="10" id="4iF-kE-x6m"/>
+                            <constraint firstItem="UWk-V0-KSQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="5kF-VW-MXX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AAs-NA-EFo" secondAttribute="bottom" constant="30" id="BK8-qR-qqB"/>
+                            <constraint firstItem="V6T-3U-fs4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="DHE-hq-ZC5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FVY-ne-etB" secondAttribute="trailing" constant="30" id="Gj3-Le-8ke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AAs-NA-EFo" secondAttribute="trailing" constant="30" id="MwK-FJ-peh"/>
+                            <constraint firstAttribute="bottom" secondItem="Htb-Ju-CAY" secondAttribute="bottom" id="VOz-f7-KaU"/>
+                            <constraint firstItem="V6T-3U-fs4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="X2G-aH-bWU"/>
+                            <constraint firstItem="UWk-V0-KSQ" firstAttribute="top" secondItem="FVY-ne-etB" secondAttribute="bottom" constant="20" id="dGH-TY-mHM"/>
+                            <constraint firstItem="AAs-NA-EFo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="drU-tD-V00"/>
+                            <constraint firstItem="Htb-Ju-CAY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fsn-KX-LlR"/>
+                            <constraint firstItem="FVY-ne-etB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="k6x-DG-m9c"/>
+                            <constraint firstItem="Htb-Ju-CAY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lC8-V5-mGa"/>
+                            <constraint firstItem="UWk-V0-KSQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-30" id="syD-be-aNY"/>
+                            <constraint firstItem="AAs-NA-EFo" firstAttribute="top" secondItem="UWk-V0-KSQ" secondAttribute="bottom" constant="20" id="xJv-uJ-7y6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="monedaPicker" destination="UWk-V0-KSQ" id="wKo-kU-1cA"/>
+                        <outlet property="precioBitcoinLabel" destination="FVY-ne-etB" id="lOQ-Wu-2ZK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-424" y="-83"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bit" width="200" height="200"/>
+        <image name="degradado" width="360" height="240"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
